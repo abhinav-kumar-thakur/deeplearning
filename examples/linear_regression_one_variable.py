@@ -5,7 +5,7 @@ import numpy as np
 import logging
 from tensorflow.python.compiler.mlcompute import mlcompute
 
-mlcompute.set_mlc_device(device_name='cpu')
+mlcompute.set_mlc_device(device_name='gpu')
 tf.config.run_functions_eagerly(False)
 logger = tf.get_logger()
 logger.setLevel(logging.INFO)
