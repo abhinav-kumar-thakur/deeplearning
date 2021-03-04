@@ -1,24 +1,10 @@
-"""
-Title: Simple MNIST convnet
-Author: [fchollet](https://twitter.com/fchollet)
-Date created: 2015/06/19
-Last modified: 2020/04/21
-Description: A simple convnet that achieves ~99% test accuracy on MNIST.
-"""
 import time
 import numpy as np
 import tensorflow as tf
 from tensorflow.python.compiler.mlcompute import mlcompute
 
-"""
-## Setup
-"""
 mlcompute.set_mlc_device(device_name='gpu')
 tf.config.run_functions_eagerly(False)
-
-"""
-## Prepare the data
-"""
 
 # Model / data parameters
 num_classes = 10
